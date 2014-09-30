@@ -1,0 +1,107 @@
+%%% Flyer for the Open Source Club at The Ohio State University
+%%%     originally authored chris wallace <chris@chriswallace.io>
+%%%
+%%%     distributed under a creative commons share-alike attribution (CC-BY-SA)
+\documentclass{article}
+
+\usepackage[top=0.75in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{graphicx}
+
+% small itemize
+\usepackage{paralist}
+
+% latin modern
+\usepackage{lmodern}
+
+% use colors
+\usepackage{color}
+\definecolor{osuosc-red}{RGB}{152,27,30}
+
+% helvetica
+%\usepackage{helvet}
+\renewcommand*\sfdefault{phv}
+
+% use multiple columns
+\usepackage{multicol}
+
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+	\includegraphics[width=0.4\textwidth]{logo.png}
+	\par 
+	\fontsize{46}{52}
+	\selectfont
+	\sffamily
+	{\bfseries
+	Open Source Club}
+	\par \vskip 0.1em
+	\Huge \color{osuosc-red}
+	The Ohio State University
+
+\end{center}
+\vskip 2em
+\begin{center}
+	\Large
+	The Open Source Club is a registered student organization composed of
+	members who share a common enthusiasm for the open source philosophy. Our
+	focus is to build a strong community of open source users and developers in
+	order to bring the benefits of open development, open standards, and free
+	software to the university community.
+	\par \vskip 1em
+	All meetings are open to the public.
+\end{center}
+\vskip 1em
+\begin{multicols}{2}
+	\Large
+	{\bfseries
+	Past Meeting Topics:}
+
+	\vskip 1em
+	\begin{compactitem}
+		\item Wireless Security
+		\item Linux Distributions
+		\item Programming Languages (C, C++, Java, Ruby, Python, \LaTeX)
+		\item Vim and Emacs
+		\item Open Source Hardware
+		\item Open Source Gaming
+	\end{compactitem}
+
+	\par
+	\columnbreak
+
+	\flushright
+	\noindent{\bfseries
+	Where?}\\
+	Caldwell Labs 120
+
+	\vskip 1em
+	\par
+	\noindent{\bfseries
+	When?}\\
+	Every Thursday at 7pm
+
+	\vskip 1em
+	\par
+	\noindent{\bfseries
+	Our Office:}\\
+	Caldwell Labs 112F
+\end{multicols}
+
+\newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
+\begin{bottompar}
+\begin{flushright}
+	\huge
+	\sffamily
+	\includegraphics[width=1.2em]{Twitter_logo_blue.png}@osuosc\par
+	\#osuosc on chat.freenode.net
+\end{flushright}
+\vskip -1em
+\hskip 2em
+\fontsize{32}{32} \selectfont \bfseries \sffamily
+\includegraphics[height=1em]{cc-by-sa.png}
+\hfill opensource.osu.edu
+\end{bottompar}
+
+\end{document}
